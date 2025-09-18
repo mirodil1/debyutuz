@@ -215,7 +215,7 @@ async def process_education_level(message: Message, state: FSMContext):
 @submission_router.message(SubmissionState.education)
 async def process_education(message: Message, state: FSMContext):
     await state.update_data(education=message.text)
-    await state.set_state(SubmissionState.profession)
+    await state.set_state(SubmissionState.creative_work)
 
     await message.answer(
         "<b>Ijodiy ishlaringiz bormi?</b>\n"
