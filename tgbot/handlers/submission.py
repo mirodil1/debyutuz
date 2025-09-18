@@ -299,10 +299,8 @@ async def process_phone_number(
         date_of_birth=datetime.strptime(data["date_of_birth"], "%d.%m.%Y").date(),
         area_id=data["area_id"],
         photo=data["photo"],
-        process_education_level=data["education_level"],
-        profession=data.get("profession"),
+        education_level=data["education_level"],
         education=data["education"],
-        certificate=data["certificate"],
         creative_work=data["creative_work"],
         phone_number=data["phone_number"]
     )
